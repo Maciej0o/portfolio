@@ -3,16 +3,12 @@ nav {
     width: 100%;
     max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     padding: 3em 0;
     position: fixed;
 }
 
-.nav-logo {
-    height: 6rem;
-    border-radius: 3rem;
-}
 
 .menu-bar {
     border-radius: 2.5rem;
@@ -49,7 +45,7 @@ nav {
 
         &:hover {
             &::before {
-                background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+                background: $text-color;
                 box-shadow: 0px 3px 20px 0px black;
 				transform: scale(1.2);
             }

@@ -42,19 +42,14 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 3em 0;
   position: fixed;
-}
-
-.nav-logo {
-  height: 6rem;
-  border-radius: 3rem;
 }
 
 .menu-bar {
@@ -101,11 +96,95 @@ nav {
 }
 
 .menu-bar__button:hover::before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e8edec), to(#d2d1d3));
-  background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+  background: #E6F5FF;
   -webkit-box-shadow: 0px 3px 20px 0px black;
           box-shadow: 0px 3px 20px 0px black;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.aboutme {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutme--left-column {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutme--right-column {
+  padding-right: 5rem;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutme__greet {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.aboutme__name {
+  font-size: 12rem;
+}
+
+.aboutme__subtitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #834C69;
+}
+
+.aboutme__info {
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.aboutme__button {
+  padding: 1rem 2.6rem;
+  text-decoration: none;
+  color: #E6F5FF;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  border: 0.4rem solid #834C69;
+  border-radius: 2.5rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.aboutme__button:hover {
+  background-color: #834C69;
+}
+
+.aboutme__img {
+  width: 40%;
 }
 /*# sourceMappingURL=style.css.map */
