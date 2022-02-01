@@ -20,22 +20,39 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-nav {
+main {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3em;
+  padding: 3em 0;
   position: fixed;
 }
 
 .nav-logo {
-  margin-right: 20rem;
   height: 6rem;
   border-radius: 3rem;
 }
@@ -57,7 +74,7 @@ nav {
 
 .menu-bar__button {
   position: relative;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   margin: 0 0.8rem;
   cursor: pointer;
   padding: 1.5rem 1.6rem;
