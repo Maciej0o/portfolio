@@ -1,8 +1,16 @@
 
 nav {
     display: flex;
-    justify-content: center;
-    padding: 5em;
+    justify-content:left;
+    align-items: center;
+    padding: 3em;
+    position: fixed;
+}
+
+.nav-logo {
+    margin-right: 20rem;
+    height: 6rem;
+    border-radius: 3rem;
 }
 
 .menu-bar {
