@@ -137,9 +137,22 @@
         color: $text-color;
         font-size: 3rem;
         margin-bottom: 2rem;
+        transition: .2s;
+
+        &:hover {
+            color: $main-color;
+        }
     }
 }
 
 .fortiori {
     background-image: url('../../img/Screenshot\ 2022-01-02\ 120835.jpg');
+}
+
+.paradise {
+    background-image: url('../../img/Screenshot\ 2022-01-02\ 110732.jpg');
+}
+
+.money {
+    background-image: url('../../img/Screenshot\ 2022-01-02\ 111517.jpg');
 }

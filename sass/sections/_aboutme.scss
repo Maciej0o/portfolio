@@ -3,6 +3,26 @@
     width: 100%;
     display: flex;
 
+    &__arrow-icon {
+        height: 6rem;
+        width: 6rem;
+        font-size: 2rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 5rem;
+        left: 50%;
+        border-radius: 50%;
+
+        border: .2rem solid $text-color;
+        animation: 1s ease infinite pulse;
+
+        i {
+            color: $text-color;
+        }
+    }
+
     &--left-column {
         width: 50%;
         height: 100%;

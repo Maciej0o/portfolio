@@ -38,7 +38,7 @@
         padding-bottom: 3rem;
         display: flex;
         &--first {
-            padding-right: 20rem;
+            padding-right: 10rem;
             justify-content: space-between;
         }
 
@@ -59,6 +59,7 @@
     }
 
     &__skill-name {
+        font-size: 2.2rem;
         text-transform: uppercase;
         padding: 1rem 2rem;
         border: .5rem solid $main-color;

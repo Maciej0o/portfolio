@@ -1,5 +1,30 @@
 /* COLORS */
 /* FONTS */
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -42,7 +67,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
   position: fixed;
 }
 
@@ -108,6 +133,32 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.aboutme__arrow-icon {
+  height: 6rem;
+  width: 6rem;
+  font-size: 2rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 5rem;
+  left: 50%;
+  border-radius: 50%;
+  border: 0.2rem solid #E6F5FF;
+  -webkit-animation: 1s ease infinite pulse;
+          animation: 1s ease infinite pulse;
+}
+
+.aboutme__arrow-icon i {
+  color: #E6F5FF;
 }
 
 .aboutme--left-column {
@@ -243,7 +294,7 @@ nav {
 }
 
 .skills__line--first {
-  padding-right: 20rem;
+  padding-right: 10rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -269,6 +320,7 @@ nav {
 }
 
 .skills__skill-name {
+  font-size: 2.2rem;
   text-transform: uppercase;
   padding: 1rem 2rem;
   border: 0.5rem solid #834C69;
@@ -442,9 +494,23 @@ nav {
   color: #E6F5FF;
   font-size: 3rem;
   margin-bottom: 2rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.projects__link:hover {
+  color: #834C69;
 }
 
 .fortiori {
   background-image: url("../../img/Screenshot 2022-01-02 120835.jpg");
+}
+
+.paradise {
+  background-image: url("../../img/Screenshot 2022-01-02 110732.jpg");
+}
+
+.money {
+  background-image: url("../../img/Screenshot 2022-01-02 111517.jpg");
 }
 /*# sourceMappingURL=style.css.map */
