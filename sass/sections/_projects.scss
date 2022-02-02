@@ -73,6 +73,7 @@
     }
 
     &__card-img{
+        position: relative;
         width: 100%;
         height: 100%;
         background-position: center;
@@ -81,7 +82,19 @@
         transition: .8s;
         box-shadow: 5px 5px 10px rgba(0,0,0,.7);
 
-        
+        &::after {
+            content: " ";
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+
+            background-color: $main-color;
+            opacity: .3;
+
+        }
 
 
         
@@ -138,9 +151,13 @@
         font-size: 3rem;
         margin-bottom: 2rem;
         transition: .2s;
+        border: 2px solid $text-color;
+        border-radius: 2.5rem;
+        padding: 1rem 2rem;
 
         &:hover {
-            color: $main-color;
+            color: $dark-color;
+            background-color: $text-color;
         }
     }
 }
