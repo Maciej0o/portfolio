@@ -31,6 +31,12 @@ nav {
         font-weight: bold;
         z-index: 1;
 
+        a{
+            text-decoration: none;
+            color: $text-color;
+
+        }
+
         &::before {
             content: " ";
             position: absolute;
@@ -49,7 +55,9 @@ nav {
                 box-shadow: 0px 3px 20px 0px black;
 				transform: scale(1.2);
             }
-            color: black;
+            a {
+                color: $dark-color;
+            }
 
         }
 
