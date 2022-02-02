@@ -35,7 +35,7 @@
     }
 
     &__line {
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
         display: flex;
         &--first {
             padding-right: 20rem;
@@ -65,6 +65,8 @@
         background-color: $main-color;
         border-radius: 2.5rem;
         transition: .2s;
+        box-shadow: -3px 3px 5px rgb(49, 47, 47);
+
 
         &:hover {
             transform: scale(1.2);
