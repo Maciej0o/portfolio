@@ -16,7 +16,11 @@
         border-radius: 50%;
 
         border: .2rem solid $text-color;
-        animation: 1s ease infinite pulse;
+
+        &:hover {
+
+            animation: 1s ease infinite pulse;
+        }
 
         i {
             color: $text-color;
@@ -49,6 +53,24 @@
 
     &__name {
         font-size: 12rem;
+        overflow: hidden;
+        width: 110%;
+        animation: type .4s .1s steps(60, end); 
+
+
+    }
+
+    &__surname {
+        font-size: 12rem;
+        overflow: hidden;
+        width: 110%;
+        animation: type2 .8s .1s steps(60, end);
+
+        span {
+            animation: blink 2.3s infinite;
+
+        }
+
     }
 
     &__subtitle {
@@ -63,6 +85,7 @@
     }
 
     &__button {
+        position: relative;
         padding: 1rem 2.6rem;
         text-decoration: none;
         color: $text-color;
@@ -71,8 +94,23 @@
         border: .4rem solid $main-color;
         border-radius: 2.5rem;
         transition: .2s;
-        &:hover {
+        overflow: hidden;
+
+        &:hover{
+            &::after{
+                animation: slide 1s  1 forwards;
+
+            }
+        }
+        &::after {
+            content: " ";
+            position: absolute;
+            top: -5%;
+            left: -111%;
+            width: 110%;
+            height: 120%;
             background-color: $main-color;
+            z-index: -1;
         }
     }
 

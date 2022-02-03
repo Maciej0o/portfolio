@@ -16,3 +16,26 @@
     10% {transform: scale(1);}
     100% {transform: scale(1);}
 }
+
+@keyframes type {
+    from { width: 0; }
+}
+
+@keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+
+  @keyframes blink{
+  0%{opacity: 0;}
+  45% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes slide {
+   from{left: -111%;}
+ 
+ to {left: -1%;}
+}

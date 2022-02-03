@@ -1,5 +1,5 @@
 .projects {
-    padding: 8rem 0;
+    padding: 12rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,19 +146,7 @@
 
     &__link {
         
-        text-decoration: none;
-        color: $text-color;
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        transition: .2s;
-        border: 2px solid $text-color;
-        border-radius: 2.5rem;
-        padding: 1rem 2rem;
-
-        &:hover {
-            color: $dark-color;
-            background-color: $text-color;
-        }
+        font-size: 2.2rem;
     }
 }
 

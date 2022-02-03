@@ -27,3 +27,40 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+
+.btn-white {
+        position: relative;
+        padding: 1rem 2.6rem;
+        text-decoration: none;
+        color: $text-color;
+        text-transform: uppercase;
+        border: .4rem solid $text-color;
+        border-radius: 2.5rem;
+        transition: .1s;
+        overflow: hidden;  
+        margin-bottom: 2rem;      
+
+        &:hover{
+            color: $dark-color;
+            &::after{
+                animation: slide 1s  1 forwards;
+
+            }
+        }
+    &::after {
+        content: " ";
+        position: absolute;
+        top: -5%;
+        left: -111%;
+        width: 110%;
+        height: 120%;
+        background-color: $text-color;
+        z-index:-1;
+
+        
+    }
+}
+
+.light-background {
+    background-color: $light-color;
+}
