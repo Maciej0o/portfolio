@@ -63,3 +63,17 @@ nav {
 
     }
 }
+
+@media (max-width: 768px){
+
+    nav {
+        padding: 3rem 1rem;
+    }
+    .menu-bar {
+        &__button {
+            font-size: 1.6rem;
+        }
+    
+       
+    }
+    }
