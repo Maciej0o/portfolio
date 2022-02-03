@@ -227,7 +227,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 5rem;
   position: fixed;
   z-index: 9;
 }
@@ -291,6 +291,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 5rem;
 }
 
 .aboutme__arrow-icon {
@@ -323,7 +324,7 @@ nav {
 }
 
 .aboutme--left-column {
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,11 +339,12 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 3;
 }
 
 .aboutme--right-column {
   padding-right: 5rem;
-  width: 50%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,6 +396,7 @@ nav {
 .aboutme__info {
   padding: 2rem 0;
   font-size: 2rem;
+  width: 80%;
 }
 
 .aboutme__button {
@@ -427,7 +430,16 @@ nav {
 }
 
 .aboutme__img {
-  width: 40%;
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  .aboutme--left-column {
+    width: 100%;
+  }
+  .aboutme--right-column {
+    display: none;
+  }
 }
 
 .skills {
@@ -496,9 +508,8 @@ nav {
 }
 
 .skills__line--third {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .skills__line--fourth {
@@ -577,8 +588,14 @@ nav {
           animation: 10s 5.4s ease infinite pulse-skills;
 }
 
+@media (max-width: 992px) {
+  .skills__skill-name {
+    font-size: 1.4rem;
+  }
+}
+
 .projects {
-  padding: 12rem 0;
+  padding: 12rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,7 +787,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 12rem 0;
+  padding: 12rem 5rem;
 }
 
 .projects-small__title {
@@ -850,7 +867,7 @@ nav {
 }
 
 .projects-small__link {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .contact {
@@ -921,11 +938,11 @@ nav {
 }
 
 .contact__card {
-  background-color: #E6F5FF;
-  color: #33313B;
+  border: 0.3rem solid #E6F5FF;
+  color: #E6F5FF;
   font-weight: bold;
   opacity: .8;
-  padding: 3rem 5rem 3rem 5rem;
+  padding: 3rem 4.5rem 3rem 4.5rem;
   height: 25rem;
   width: 80%;
   display: -webkit-box;
@@ -966,7 +983,7 @@ nav {
 
 .contact__link {
   text-decoration: none;
-  color: #33313B;
+  color: #E6F5FF;
   font-size: 3rem;
   padding-bottom: 2rem;
   -webkit-transition: .2s;

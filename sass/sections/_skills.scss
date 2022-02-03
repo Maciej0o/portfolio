@@ -46,7 +46,7 @@
         }
 
         &--third{
-             justify-content: space-evenly;
+             justify-content: space-around;
 
             }
 
@@ -106,4 +106,13 @@
 }
 .pulse11 {
     animation: 10s 5.4s ease infinite pulse-skills;
+}
+
+
+@media (max-width: 992px) {
+    .skills {
+        &__skill-name {
+            font-size: 1.4rem;
+        }
+    }
 }

@@ -44,11 +44,11 @@
     }
 
     &__card {
-        background-color: $text-color;
-        color: $dark-color;
+        border: .3rem solid $text-color;
+        color: $text-color;
         font-weight: bold;
         opacity: .8;        
-        padding: 3rem 5rem 3rem 5rem;
+        padding: 3rem 4.5rem 3rem 4.5rem;
         height: 25rem;
         width: 80%;
         display: flex;
@@ -77,7 +77,7 @@
     }
      &__link {
          text-decoration: none;
-         color: $dark-color;
+         color: $text-color;
          font-size: 3rem;
          padding-bottom: 2rem;
          transition: .2s;
