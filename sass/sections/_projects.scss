@@ -161,3 +161,18 @@
 .money {
     background-image: url('../../img/Screenshot\ 2022-01-02\ 111517.jpg');
 }
+
+@media (max-width: 992px) {
+    .projects {
+        &__card {
+            width: 70%;
+        }
+        &__info {
+            width: 30%;
+        }
+
+        &__link {
+            font-size: 1.2rem;
+        }
+    }
+}
