@@ -134,3 +134,26 @@
         }
     }
 }
+
+@media (max-width: 568px) {
+    .skills {
+        &__skill-name {
+            font-size: 1rem;
+        }
+
+        &__line {
+            &--first {
+                padding-right: 3rem;
+            }
+    
+            &--second {
+                justify-content: space-between;
+                padding-left: 6rem;
+    
+            }
+    
+        
+        }
+       
+    }
+}

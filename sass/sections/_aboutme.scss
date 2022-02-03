@@ -173,3 +173,15 @@
         }
     }
     }
+
+    @media (max-width: 568px) {
+        .aboutme {
+            &__name {
+                font-size: 6rem;
+            }
+
+            &__surname {
+                font-size: 6rem;
+            }
+        }
+    }

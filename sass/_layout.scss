@@ -64,3 +64,11 @@ main {
 .light-background {
     background-color: $light-color;
 }
+
+@media (max-width: 768px) {
+    .btn-white {
+        padding: 1rem 1.6rem;
+        border: .2rem solid $text-color;
+
+    }
+}

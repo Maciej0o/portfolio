@@ -97,3 +97,15 @@
         }
     }
 }
+
+@media (max-width: 768px){
+
+    .projects-small {
+
+        &__card {
+            width: 48%;
+            margin-bottom: 4rem;
+            height: 20rem
+        }
+    }
+}
