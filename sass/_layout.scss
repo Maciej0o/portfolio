@@ -22,6 +22,7 @@ main {
     width: 100%;
 }
 
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -63,6 +64,14 @@ main {
 
 .light-background {
     background-color: $light-color;
+}
+
+.hide{
+	opacity:0
+}
+
+.show {
+	opacity: 1;
 }
 
 @media (max-width: 768px) {

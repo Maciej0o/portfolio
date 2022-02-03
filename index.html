@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2403d028a5.js" crossorigin="anonymous"></script></head>
+    <link rel="stylesheet" href="animate.css" type="text/css">
 
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
@@ -16,7 +17,7 @@
     <main>
         <div class="container">
             <nav>
-                <ul class="menu-bar">
+                <ul class="menu-bar os-animation" data-animation='bounceInDown'>
                     <li class="menu-bar__button"><a href="#aboutme">about me</a></li>
                     <li class="menu-bar__button"><a href="#skills">skills</a></li>
                     <li class="menu-bar__button"><a href="#projects">projects</a></li>
@@ -30,12 +31,12 @@
                     <div class="aboutme--left-column">
                         <p class="aboutme__greet">hi there i'm </p>
                         <h1 class="aboutme__name">Maciej</h1>
-                        <h2 class="aboutme__surname"> Smolarczyk<span>|</span></h2>
-                        <h3 class="aboutme__subtitle">Frontend Developer</h3>
-                        <p class="aboutme__info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
-                        <a href="" class="aboutme__button">Hire Me</a>
+                        <h2 class="aboutme__surname os-animation"  data-animation='bounceInUp'> Smolarczyk<span>|</span></h2>
+                        <h3 class="aboutme__subtitle os-animation"  data-animation='bounceInUp'>Frontend Developer</h3>
+                        <p class="aboutme__info os-animation"  data-animation='bounceInUp'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                        <a href="" class="aboutme__button os-animation"  data-animation='bounceInUp' data-delay=".1s">Hire Me</a>
                     </div>
-                    <div class="aboutme--right-column">
+                    <div class="aboutme--right-column os-animation" data-animation='bounceInUp' data-delay=".3s">
                         <img src="img/code-aboutme.png" alt="signs" class="aboutme__img">
                     </div>
                     <a href="#skills" class="aboutme__arrow-icon">
@@ -43,28 +44,28 @@
                     </a>
                 </div>
 
-                <div class="light-background" id="skills">
+                <div class="light-background" id="skills" >
                     <div  class="container skills">
-                        <h2 class="skills__title">Skills</h2>
+                        <h2 class="os-animation skills__title" data-animation='bounceInUp' >Skills</h2>
                         <div class="skills__wrapper">
-                            <div class="skills__line skills__line--first">
+                            <div class="skills__line skills__line--first os-animation" data-animation='heartBeat'>
                                 <span class="skills__skill-name pulse1"><i class="fab fa-html5"></i> html5</span>
                                 <span class="skills__skill-name pulse2"><i class="fab fa-css3-alt"></i> css3</span>
                                 <span class="skills__skill-name pulse3"><i class="fab fa-js-square"></i> java script</span>
                             </div>
-                            <div class="skills__line skills__line--second">
+                            <div class="skills__line skills__line--second  os-animation" data-animation='heartBeat'>
                                 <span class="skills__skill-name pulse4"><i class="fab fa-react"></i> react</span>
                                 
                                 <span class="skills__skill-name pulse5"><i class="fab fa-git-alt"></i> git</span>
                                 <span class="skills__skill-name pulse6"><i class="fab fa-react"></i> react router</span>
 
                             </div>
-                            <div class="skills__line skills__line--third">
+                            <div class="skills__line skills__line--third  os-animation" data-animation='heartBeat'>
                                
                                 <span class="skills__skill-name pulse7"><i class="fab fa-bootstrap"></i> bootstrap</span>
                                 <span class="skills__skill-name pulse8"><i class="fab fa-sass"></i> sass</span>
                             </div>
-                            <div class="skills__line skills__line--fourth">
+                            <div class="skills__line skills__line--fourth os-animation" data-animation='heartBeat'>
                                 <span class="skills__skill-name pulse9"><i class="fas fa-code"></i> bem</span>
                                 <span class="skills__skill-name pulse10"><i class="fas fa-mobile"></i> rwd</span>
                                 <span class="skills__skill-name pulse11"><i class="fab fa-github-square"></i> github</span>
@@ -74,12 +75,12 @@
                     </div>
                 </div>
                 <div class="container projects"  id="projects">
-                    <h2 class="projects__title">projects</h2>
+                    <h2 class="projects__title os-animation" data-animation='bounceInUp'>projects</h2>
                     <div class="projects__cards-wrapper">
 
                         <div class="projects__card-box">
 
-                            <div class="projects__card">
+                            <div class="projects__card os-animation"  data-animation='fadeIn'>
                                 <div class="projects__card-img fortiori"><i class="far fa-question-circle projects__card-button-info"></i></div>
                                 <div class="projects__card-wrapper-text">
                                     <h3 class="projects__info-title">CEO</h3>
@@ -88,7 +89,7 @@
                                   </div>
                             </div>
 
-                            <div class="projects__info">
+                            <div class="projects__info os-animation" data-animation='fadeIn' data-delay=".1s">
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects__link btn-white"><i class="fab fa-github"></i> GitHub project
                                 </a>
                                 <a target="_blank" targeta href="https://github.com/Maciej0o/fortiori" class="projects__link btn-white"><i class="fas fa-desktop"></i>
@@ -100,7 +101,7 @@
 
                         <div class="projects__card-box    projects__card-box--right">
 
-                            <div class="projects__card">
+                            <div class="projects__card os-animation"  data-animation='fadeIn'>
                                 <div class="projects__card-img paradise"><i class="far fa-question-circle projects__card-button-info"></i></div>
                                 <div class="projects__card-wrapper-text">
                                     <h3 class="projects__info-title">CEO</h3>
@@ -109,7 +110,7 @@
                                   </div>
                             </div>
 
-                            <div class="projects__info">
+                            <div class="projects__info os-animation" data-animation='fadeIn' data-delay=".1s">
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects__link btn-white"><i class="fab fa-github"></i> GitHub project
                                 </a>
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects__link btn-white"><i class="fas fa-desktop"></i>
@@ -121,7 +122,7 @@
 
                         <div class="projects__card-box">
 
-                            <div class="projects__card">
+                            <div class="projects__card os-animation"  data-animation='fadeIn'>
                                 <div class="projects__card-img money"><i class="far fa-question-circle projects__card-button-info"></i></div>
                                 <div class="projects__card-wrapper-text">
                                     <h3 class="projects__info-title">CEO</h3>
@@ -130,7 +131,7 @@
                                   </div>
                             </div>
 
-                            <div class="projects__info">
+                            <div class="projects__info os-animation" data-animation='fadeIn' data-delay=".1s">
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects__link btn-white"><i class="fab fa-github"></i> GitHub project
                                 </a>
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects__link btn-white"><i class="fas fa-desktop"></i>
@@ -144,9 +145,9 @@
                 </div>
 
                 <div class="projects-small container">
-                    <h2 class="projects-small__title">small projects</h2>
+                    <h2 class="projects-small__title os-animation" data-animation='bounceInUp'>small projects</h2>
                     <div class="projects-small__wrapper">
-                        <div class="projects-small__card">
+                        <div class="projects-small__card os-animation" data-animation='bounceIn'>
                             <div class="projects-small__img"></div>
                             <div class="projects-small__links">
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects-small__link btn-white"><i class="fab fa-github"></i> GitHub project
@@ -157,7 +158,7 @@
                             </div>
                         </div>
 
-                        <div class="projects-small__card">
+                        <div class="projects-small__card os-animation" data-animation='bounceIn' data-delay=".2s">
                             <div class="projects-small__img"></div>
                             <div class="projects-small__links">
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects-small__link btn-white"><i class="fab fa-github"></i> GitHub project
@@ -168,7 +169,7 @@
                             </div>
                         </div>
 
-                        <div class="projects-small__card">
+                        <div class="projects-small__card os-animation" data-animation='bounceIn' data-delay=".1s">
                             <div class="projects-small__img"></div>
                             <div class="projects-small__links">
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects-small__link btn-white"><i class="fab fa-github"></i> GitHub project
@@ -179,7 +180,7 @@
                             </div>
                         </div>
 
-                        <div class="projects-small__card">
+                        <div class="projects-small__card os-animation" data-animation='bounceIn' data-delay=".3s">
                             <div class="projects-small__img"></div>
                             <div class="projects-small__links">
                                 <a target="_blank" href="https://github.com/Maciej0o/fortiori" class="projects-small__link btn-white"><i class="fab fa-github"></i>     GitHub project
@@ -194,10 +195,10 @@
 
                 <div class="light-background">
                     <div  class="contact container" id="contact">
-                        <h2 class="contact__title">contact</h2>
+                        <h2 class="contact__title os-animation" data-animation='bounceInUp'>contact</h2>
 
                         <div class="contact__column-wrapper">
-                            <div class="contact__left-column">
+                            <div class="contact__left-column os-animation" data-animation='bounceInLeft'>
                                 <div class="contact__card">
                                     <p class="contact__name"><i class="fas fa-id-card"></i> Maciej Smolarczyk</p>
                                     <p class="contact__email"><i class="fas fa-envelope"></i> smolarczyk.maciek@gmail.com</p>
@@ -205,7 +206,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="contact__right-column">
+                            <div class="contact__right-column os-animation" data-animation='bounceInRight'>
                                 <div class="contact__card">
                                     <a href="" class="contact__link"><i class="fab fa-github-square"> </i>GitHub</a>
                                     <a href="" class="contact__link"><i class="fas fa-file"></i> CV</a>
@@ -224,7 +225,14 @@
 
 
     </main>
-   
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="jquery.waypoints.min"></script>
+    <script src="animation.js"></script>
     
     
 </body>

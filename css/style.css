@@ -215,6 +215,14 @@ main {
   background-color: #3C4F65;
 }
 
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .btn-white {
     padding: 1rem 1.6rem;
@@ -307,6 +315,7 @@ nav {
 @media (max-width: 568px) {
   .menu-bar__button {
     font-size: 1.2rem;
+    margin: 0 0.2rem;
   }
 }
 
@@ -337,6 +346,7 @@ nav {
   left: 50%;
   border-radius: 50%;
   border: 0.2rem solid #E6F5FF;
+  z-index: 10;
 }
 
 .aboutme__arrow-icon:hover {
@@ -395,21 +405,21 @@ nav {
   font-size: 12rem;
   overflow: hidden;
   width: 110%;
-  -webkit-animation: type 0.4s 0.1s steps(60, end);
-          animation: type 0.4s 0.1s steps(60, end);
+  -webkit-animation: type 0.6s steps(60, end);
+          animation: type 0.6s steps(60, end);
 }
 
 .aboutme__surname {
   font-size: 12rem;
   overflow: hidden;
   width: 110%;
-  -webkit-animation: type2 0.8s 0.1s steps(60, end);
-          animation: type2 0.8s 0.1s steps(60, end);
+  -webkit-animation: type2 0.6s steps(60, end);
+          animation: type2 0.6s steps(60, end);
 }
 
 .aboutme__surname span {
-  -webkit-animation: blink 2.3s infinite;
-          animation: blink 2.3s infinite;
+  -webkit-animation: blink 1.8s infinite;
+          animation: blink 1.8s infinite;
 }
 
 .aboutme__subtitle {
