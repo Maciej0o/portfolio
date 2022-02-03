@@ -1,0 +1,13 @@
+.footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: .2rem solid $main-color;
+    border-bottom: .2rem solid $main-color;
+    opacity: .6;
+
+    &__text {
+        font-size: 1.2rem;
+    }
+}
