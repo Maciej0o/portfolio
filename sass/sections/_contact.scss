@@ -92,3 +92,19 @@
      }
    
 }
+
+@media (max-width: 992px) {
+    .contact {
+
+        &__column-wrapper {
+            flex-wrap: wrap;
+        }
+        &__left-column, &__right-column {
+            width: 100%;
+        }
+
+        &__left-column {
+            padding-bottom: 2rem;
+        }
+    }
+}

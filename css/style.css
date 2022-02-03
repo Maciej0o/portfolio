@@ -1021,6 +1021,19 @@ nav {
   color: #834C69;
 }
 
+@media (max-width: 992px) {
+  .contact__column-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact__left-column, .contact__right-column {
+    width: 100%;
+  }
+  .contact__left-column {
+    padding-bottom: 2rem;
+  }
+}
+
 .footer {
   padding: 2rem 0;
   display: -webkit-box;
