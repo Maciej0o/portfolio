@@ -5,23 +5,6 @@
     width: 100%;
     padding: 12rem 5rem;
 
-    &__title {
-        font-size: 4rem;
-        position: relative;
-        padding-bottom: 10rem;
-        text-transform: uppercase;
-        &::after {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 4.5rem;
-            width: 8rem;
-            height: .5rem;
-            background-color: $main-color;
-            
-        }
-    }
-
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -119,6 +102,33 @@
 
         &__card {
             width: 48%;
+            margin-bottom: 4rem;
+            height: 20rem
+        }
+    }
+}
+
+@media (max-width: 568px){
+
+    .projects-small {
+        padding: 7rem 3.5rem;
+        &__card {
+            width: 48%;
+            margin-bottom: 4rem;
+            height: 20rem
+        }
+    }
+}
+
+@media (max-width: 460px){
+
+    .projects-small {
+
+        &__wrapper {
+            justify-content: center;
+        }
+        &__card {
+            width: 90%;
             margin-bottom: 4rem;
             height: 20rem
         }

@@ -3,24 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
-    &__title {
-        font-size: 4rem;
-        position: relative;
-        padding-bottom: 10rem;
-        text-transform: uppercase;
-        &::after {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 4.5rem;
-            width: 8rem;
-            height: .5rem;
-            background-color: $main-color;
-            
-        }
-    }
 
     &__cards-wrapper {
         width: 100%;
@@ -190,7 +172,7 @@
 
 @media (max-width: 576px) {
     .projects {
-
+        padding: 7rem 3.5rem;
         &__card-box {
             flex-wrap: wrap;
         }

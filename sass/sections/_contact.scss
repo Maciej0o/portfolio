@@ -5,23 +5,6 @@
     width: 100%;
     padding: 12rem 0;
 
-    &__title {
-        font-size: 4rem;
-        position: relative;
-        padding-bottom: 10rem;
-        text-transform: uppercase;
-        &::after {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 4.5rem;
-            width: 8rem;
-            height: .5rem;
-            background-color: $main-color;
-            
-        }
-    }
-
     &__column-wrapper {
         display: flex;
         flex-direction: row;
@@ -138,6 +121,7 @@
 
 @media (max-width: 568px) {
     .contact {
+        padding: 7rem 0;
         &__column-wrapper {
             padding: 1.5rem;
 
@@ -147,5 +131,24 @@
             padding: 3rem 2rem 3rem 2rem;
             height: 18rem;
            }
+    }
+}
+
+@media (max-width: 460px){
+
+    .contact {
+        &__name {
+            font-size: 1.6rem;
+            }
+    
+            &__email {
+                font-size: 1.6rem;
+                padding: 2rem 0;
+            }
+    
+            &__phone-number {
+                font-size: 1.6rem;
+            }
+       
     }
 }

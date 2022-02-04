@@ -65,13 +65,21 @@ main {
 .light-background {
     background-color: $light-color;
 }
-
-.hide{
-	opacity:0
-}
-
-.show {
-	opacity: 1;
+.title {
+    font-size: 4rem;
+        position: relative;
+        padding-bottom: 10rem;
+        text-transform: uppercase;
+        &::after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 4.5rem;
+            width: 8rem;
+            height: .5rem;
+            background-color: $main-color;
+            
+        }
 }
 
 @media (max-width: 768px) {
@@ -79,5 +87,15 @@ main {
         padding: 1rem 1.6rem;
         border: .2rem solid $text-color;
 
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 3rem;
+
+        &::after {
+            top: 3.5rem;
+        }
     }
 }
