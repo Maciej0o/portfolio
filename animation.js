@@ -25,3 +25,4 @@ $(function () { // a self calling function
     onScrollInit($('.os-animation')); //function call with only items
     onScrollInit($('.staggered-animation'), $('.staggered-animation-container')); //function call with items and trigger
 });
+
