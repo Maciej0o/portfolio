@@ -19,14 +19,26 @@
         border-radius: 50%;
         border: .2rem solid $text-color;
         z-index: 10;
-
+        transform: translateX(-50%);
+        transition: .2s;
+        text-decoration: none;
         &:hover {
 
-            animation: 1s ease infinite pulse;
+            border: .2rem solid $main-color;
+
+            i {
+                color: $main-color;
+            }
         }
 
         i {
+            transition: .2s;
             color: $text-color;
+
+            &::before {
+                border: none;
+                color: white;
+            }
         }
     }
 
@@ -58,7 +70,7 @@
     &__name {
         font-size: 12rem;
         overflow: hidden;
-        width: 110%;
+        width: 98%;
         animation: type .6s  steps(60, end); 
 
 
@@ -67,7 +79,7 @@
     &__surname {
         font-size: 12rem;
         overflow: hidden;
-        width: 110%;
+        width: 100%;
         animation: type2 .6s  steps(60, end);
 
         span {
@@ -148,7 +160,6 @@
         &__name {
             font-size: 8rem;
             overflow: hidden;
-            width: 110%;
             animation: type .4s .1s steps(60, end); 
     
     

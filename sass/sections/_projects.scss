@@ -33,22 +33,6 @@
         border-radius: 1.5rem;
         perspective: 800px;
 
-       
-
-
-        &:hover .projects__card-wrapper-text{
-            
-            transform: rotate(0);
-            opacity: 1;
-            
-        }
-
-        &:hover .projects__card-img{
-            
-            transform: rotateX(180deg);
-            opacity: 0;
-            
-        }
 
 
 
@@ -63,11 +47,6 @@
         border-radius: 15px;
         transition: .8s;
         box-shadow: 5px 5px 10px rgba(0,0,0,.7);
-
-   
-
-
-        
     }
 
     &__card-wrapper-text {
@@ -107,7 +86,7 @@
         font-size: 1.8rem;
     }
 
-    &__card-button-info {
+    &__card-button-info, &__card-button-click {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -120,6 +99,16 @@
         z-index: 10;
 
         
+    }
+
+    &__card-button-click {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        opacity: .9;
+        text-transform: uppercase;
+        background-color: $light-color;
+        border-radius: 2.5rem;
+        display: none;
     }
 
     &__info {
@@ -153,6 +142,23 @@
 }
 
 
+
+@media (min-width: 993px){
+    .projects {
+        &__card {
+            &:hover .projects__card-wrapper-text{
+                transform: rotate(0);
+                opacity: 1;
+            }
+    
+            &:hover .projects__card-img{
+                transform: rotateX(180deg);
+                opacity: 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .projects {
         padding: 12rem 3.5rem;
@@ -167,6 +173,24 @@
         &__link {
             font-size: 1.2rem;
         }
+
+        &__card-button-info {
+            display: none;
+        }
+
+        &__card-button-click {
+            display: block;
+        }
+    }
+
+    .active-card-text {
+        transform: rotate(0);
+        opacity: 1;
+    }
+    
+    .active-card-img{
+        transform: rotateX(180deg);
+        opacity: 0;
     }
 }
 
