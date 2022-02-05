@@ -157,6 +157,7 @@ nav {
         .menu-mobile {
             display: flex;
             &__hamburger {
+                padding-right: 2rem;
                 display: inline;
             }
         }
