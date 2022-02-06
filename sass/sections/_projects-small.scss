@@ -6,15 +6,12 @@
     padding: 12rem 5rem;
 
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
+        width: 95%
     }
 
     &__card {
+        margin: 0 2rem;
         height: 30rem;
-        width: 22%;
         position: relative;
         overflow: hidden;
         border-radius: 1.5rem;
@@ -66,8 +63,9 @@
     } 
 }
 
+
 .one {
-    background-image: url('../../img/wykresy.jpg');
+    background-image: url('../../img/weatherApp.jpg');
 }
 
 .two {
@@ -81,6 +79,15 @@
     background-image: url('../../img/paradise.jpg');
 
 }
+
+.five {
+    background-image: url('../../img/wykresy.jpg');
+}
+
+.six {
+    background-image: url('../../img/meet-landing-page.jpg');
+}
+
 
 @media (max-width: 992px){
 

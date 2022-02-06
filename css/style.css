@@ -479,11 +479,6 @@ nav {
   color: #E6F5FF;
 }
 
-.aboutme__arrow-icon i::before {
-  border: none;
-  color: white;
-}
-
 .aboutme--left-column {
   width: 70%;
   height: 100%;
@@ -874,6 +869,7 @@ nav {
   border-radius: 1.5rem;
   -webkit-perspective: 800px;
           perspective: 800px;
+  cursor: pointer;
 }
 
 .projects__card-img {
@@ -946,6 +942,16 @@ nav {
   background-color: #3C4F65;
   border-radius: 2.5rem;
   display: none;
+  font-weight: bold;
+}
+
+.projects__card-button-click i {
+  position: absolute;
+  font-size: 3rem;
+  right: -.8rem;
+  top: 1.5rem;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .projects__info {
@@ -1079,18 +1085,12 @@ nav {
 }
 
 .projects-small__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+  width: 95%;
 }
 
 .projects-small__card {
+  margin: 0 2rem;
   height: 30rem;
-  width: 22%;
   position: relative;
   overflow: hidden;
   border-radius: 1.5rem;
@@ -1143,7 +1143,7 @@ nav {
 }
 
 .one {
-  background-image: url("../../img/wykresy.jpg");
+  background-image: url("../../img/weatherApp.jpg");
 }
 
 .two {
@@ -1156,6 +1156,14 @@ nav {
 
 .four {
   background-image: url("../../img/paradise.jpg");
+}
+
+.five {
+  background-image: url("../../img/wykresy.jpg");
+}
+
+.six {
+  background-image: url("../../img/meet-landing-page.jpg");
 }
 
 @media (max-width: 992px) {

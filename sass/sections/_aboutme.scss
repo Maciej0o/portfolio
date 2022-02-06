@@ -27,7 +27,7 @@
             border: .2rem solid $main-color;
 
             i {
-                color: $main-color;
+               color: $main-color;
             }
         }
 
@@ -35,10 +35,7 @@
             transition: .2s;
             color: $text-color;
 
-            &::before {
-                border: none;
-                color: white;
-            }
+           
         }
     }
 
