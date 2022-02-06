@@ -1086,6 +1086,7 @@ nav {
 
 .projects-small__wrapper {
   width: 95%;
+  padding-bottom: 2rem;
 }
 
 .projects-small__card {
@@ -1114,7 +1115,7 @@ nav {
 
 .projects-small__links {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 100;
   width: 100%;
@@ -1167,20 +1168,59 @@ nav {
 }
 
 @media (max-width: 992px) {
+  .projects-small__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects-small__card:hover .projects-small__links {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: .9;
+  }
+  .projects-small__links {
+    opacity: .9;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3C4F65;
+    bottom: 0;
+    height: 25%;
+  }
+  .projects-small__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+    margin: 0;
+    border: 0.1rem solid #E6F5FF;
+  }
+  .projects-small__link span {
+    display: none;
+  }
   .projects-small__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .projects-small__card {
-    width: 45%;
-    margin-bottom: 5rem;
   }
 }
 
 @media (max-width: 768px) {
   .projects-small__card {
-    width: 48%;
-    margin-bottom: 4rem;
     height: 20rem;
   }
 }
@@ -1197,11 +1237,6 @@ nav {
 }
 
 @media (max-width: 460px) {
-  .projects-small__wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .projects-small__card {
     width: 90%;
     margin-bottom: 4rem;
